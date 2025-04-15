@@ -136,7 +136,7 @@ h4 {
     font-size: 14px;
 }
 .rating .fa-star {
-    color: #ff523b;
+    color: red;
 }
 .col-4:hover {
     transform: translateY(-10px);
