@@ -4,3 +4,6 @@ Our website is a automobile accessories store from where people can buy accessor
 You can get tools of premium quality and affordable prices for your car, bike, scooter, etc. from us.
 Discover top-quality car accessories to upgrade your ride in style and comfort. From interior upgrades to performance parts, our website offers everything your vehicle needs—all in one place.
 Drive with confidence and style—find the perfect accessory for every journey at ProParts.
+:Product listings with images, prices, and descriptions
+:Add to cart functionality
+:Fully responsive design for all devices
