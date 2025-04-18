@@ -266,3 +266,48 @@ ul {
         display: none;
     }
 }
+/* ----- why choose us -----  */
+.usp-main__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+    gap: 20px;
+  }
+
+  .usp-block__content {
+    flex: 1 1 22%; /* 4 items in a row with some spacing */
+    text-align: center;
+    font-family: Arial, sans-serif; /* Match font with rest of the site/code */
+  }
+
+  .usp-image__image img {
+    width: 50px; /* Smaller image */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .usp-subheading.h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .usp-paragraph.h4 p {
+    font-size: 0.9rem;
+    margin: 5px 0 0 0;
+  }
+
+  .usp-heading__container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .usp-heading.h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+
+ 
