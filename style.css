@@ -310,4 +310,13 @@ ul {
     font-family: Arial, sans-serif;
   }
 
- 
+  .red-bold {
+    color: red;
+    font-weight: bold;
+  }
+
+  .black-bold {
+    color: black;
+    font-weight: bold;
+  }
+
