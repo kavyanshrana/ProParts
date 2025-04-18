@@ -143,6 +143,8 @@ h4 {
 .col-4:hover {
     transform: translateY(-10px);
 }
+
+
 /* -----offer---- */
 .offer {
     background: radial-gradient(#fff,#8d959b);
@@ -244,9 +246,109 @@ ul {
     }
 }
 
+<<<<<<< HEAD
  
 .footer .container {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
+=======
+
+/*---media query for less than 600 screen size---*/
+@media only screen and (max-width: 600px){
+    .row {
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+    .single-product .row {
+        text-align: left;
+    }
+    .single-product .col-2 {
+        padding: 20px 0;
+    }
+    .single-product h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
+    }
+}
+/* ----- why choose us -----  */
+.usp-main__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+    gap: 20px;
+  }
+
+#red-txt {
+    color: #ff523b;
+    font-weight: 500;
+}
+#black-txt {
+    color: black;
+    font-weight: 500;
+}
+
+
+  .usp-block__content {
+    flex: 1 1 22%; /* 4 items in a row with some spacing */
+    text-align: center;
+    font-family: Arial, sans-serif; /* Match font with rest of the site/code */
+  }
+
+  .usp-image__image img {
+    width: 50px; /* Smaller image */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .usp-subheading.h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .usp-paragraph.h4 p {
+    font-size: 0.9rem;
+    margin: 5px 0 0 0;
+  }
+
+  .usp-heading__container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .usp-heading.h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+
+  .red-bold {
+    color: red;
+    font-weight: bold;
+  }
+
+  .black-bold {
+    color: black;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .usp-block__content {
+      flex: 1 1 48%; /* 2 items per row on smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .usp-block__content {
+      flex: 1 1 100%; /* Full width on very small screens */
+    }
+>>>>>>> 3676bd888089fae25b2b70fb796b5f6899a67d24
 }
