@@ -339,5 +339,5 @@ ul {
   @media (max-width: 480px) {
     .usp-block__content {
       flex: 1 1 100%; /* Full width on very small screens */
-    }
-  }
+    }
+}
