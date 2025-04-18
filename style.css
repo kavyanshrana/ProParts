@@ -276,6 +276,16 @@ ul {
     gap: 20px;
   }
 
+#red-txt {
+    color: #ff523b;
+    font-weight: 500;
+}
+#black-txt {
+    color: black;
+    font-weight: 500;
+}
+
+
   .usp-block__content {
     flex: 1 1 22%; /* 4 items in a row with some spacing */
     text-align: center;
@@ -310,4 +320,24 @@ ul {
     font-family: Arial, sans-serif;
   }
 
- 
+  .red-bold {
+    color: red;
+    font-weight: bold;
+  }
+
+  .black-bold {
+    color: black;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .usp-block__content {
+      flex: 1 1 48%; /* 2 items per row on smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .usp-block__content {
+      flex: 1 1 100%; /* Full width on very small screens */
+    }
+  }
