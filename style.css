@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
@@ -160,6 +162,7 @@ small {
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
+    width: 100%;
 }
 
 .footer p {
@@ -239,4 +242,11 @@ ul {
         display: block;
         cursor: pointer;
     }
+}
+
+ 
+.footer .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
