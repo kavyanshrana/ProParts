@@ -147,10 +147,17 @@ h4 {
 
 /* -----offer---- */
 .offer {
-    background: radial-gradient(#fff,#8d959b);
-    margin-top: 80px;
-    padding: 30px 0px;
-}
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    background: radial-gradient(circle at top, #fff, #8d959b);
+    padding: 30px 0;
+    box-sizing: border-box;
+  }
+  
 .col-2 .offer-img {
     padding: 50px;
 }
@@ -160,12 +167,18 @@ small {
 
 /* ---footer--- */
 .footer {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
     background: #000;
     color: #8a8a8a;
-    font-size: 14px;
     padding: 60px 0 20px;
-    width: 100%;
-}
+    box-sizing: border-box;
+  }
+  
 
 .footer p {
     color: #8a8a8a;
@@ -180,6 +193,7 @@ small {
 }
 .footer-col-1 {
     flex-basis: 30%;
+    margin-left: 50px;
 }
 .footer-col-2 {
     flex: 1;
