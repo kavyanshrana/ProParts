@@ -165,6 +165,25 @@ small {
     color: #555;
 }
 
+
+/* ------brands------- */
+.brands {
+    margin: 100px auto;
+}
+.col-5 {
+    width: 160px;
+}
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+
+
 /* ---footer--- */
 .footer {
     position: relative;
