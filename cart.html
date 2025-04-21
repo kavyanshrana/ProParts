@@ -174,5 +174,56 @@
 </div>
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/a6ac84bd84.js" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        const removeFromCartButtons = document.querySelectorAll('.remove-from-cart-btn');
+        let totalAmount = 0;
+    
+        // Update total display function
+        function updateTotalDisplay() {
+            let totalDisplay = document.querySelector('.total-amount');
+            if (!totalDisplay) {
+                const display = document.createElement('h4');
+                display.innerHTML = `Total Amount: $<span class="total-amount">0</span>`;
+                document.body.appendChild(display);
+                totalDisplay = document.querySelector('.total-amount');
+            }
+            totalDisplay.innerText = totalAmount.toLocaleString();
+        }
+    
+        // Add to Cart
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const row = button.closest('tr');
+                const priceText = row.querySelector('.product-price').innerText;
+                const quantity = parseInt(row.querySelector('.product-quantity').value);
+                const price = parseFloat(priceText.replace(/[^0-9.-]+/g, ''));
+                const itemTotal = price * quantity;
+    
+                totalAmount += itemTotal;
+                updateTotalDisplay();
+            });
+        });
+    
+        // Remove from Cart
+        removeFromCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const row = button.closest('tr');
+                const priceText = row.querySelector('.product-price').innerText;
+                const quantity = parseInt(row.querySelector('.product-quantity').value);
+                const price = parseFloat(priceText.replace(/[^0-9.-]+/g, ''));
+                const itemTotal = price * quantity;
+    
+                totalAmount -= itemTotal;
+                if (totalAmount < 0) totalAmount = 0;
+                updateTotalDisplay();
+            });
+        });
+    
+        // Initial call to show total as 0
+        updateTotalDisplay();
+    });
+    </script>
 </body>
 </html>
