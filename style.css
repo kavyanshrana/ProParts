@@ -360,6 +360,8 @@ ul {
     margin-bottom: 2rem;
     font-size: 2rem;
     font-family: Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .red-bold { color: #ff523b; font-weight: 700; }
   .black-bold { color: #000; font-weight: 700; }
