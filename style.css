@@ -470,3 +470,17 @@ form a{
     transform: translateX(100px);
     transition: transform 1s;
 }
+
+
+/* ------brands------- */
+.brands {
+    margin: 100px auto;
+}
+.col-5 {
+    width: 160px;
+}
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+}
+
