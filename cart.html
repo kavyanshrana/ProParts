@@ -17,11 +17,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="">About </a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
+                    <li><a href="Account.html">Account</a></li>
                 </ul>
             </nav>
             <img src="images/cart.png" width="30px" height="30px">
@@ -33,85 +33,85 @@
 
 <div class="small-container cart-page">
 
-<table>
-    <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Subtotal</th>
-    </tr>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
 
-    <tr>
-        <td>
-            <div class="cart-info">
-                <img src="images/buy-1.jpg">
-                <div>
-                    <p>Red Printed Tshirt</p>
-                    <small>Price: $50.00</small>
-                    <br>
-                    <a href="">Remove</a>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product1.png">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small><h4 class="product-price">$700</h4></small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
                 </div>
-            </div>
 
-        </td>
-        <td><input type="number" value="1"></td>
-        <td>$50</td>
-    </tr>
+            </td>
+            <td><input type="number" class="product-quantity" value="1" min="1"></td>
+            <td><button class="btn add-to-cart-btn">Add To Cart</button></td>
+            <td><button class="btn remove-from-cart-btn">Remove</button>
+        </tr>
 
-    <tr>
-        <td>
-            <div class="cart-info">
-                <img src="images/buy-2.jpg">
-                <div>
-                    <p>Red Printed Tshirt</p>
-                    <small>Price: $70.00</small>
-                    <br>
-                    <a href="">Remove</a>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/prod2.jpg">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small><h4 class="product-price">$400</h4></small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
                 </div>
-            </div>
 
-        </td>
-        <td><input type="number" value="1"></td>
-        <td>$70</td>
-    </tr>
+            </td>
+            <td><input type="number" class="product-quantity" value="1" min="1"></td>
+            <td><button class="btn add-to-cart-btn">Add To Cart</button></td>
+            <td><button class="btn remove-from-cart-btn">Remove</button>
+        </tr>
 
-    
-    <tr>
-        <td>
-            <div class="cart-info">
-                <img src="images/buy-3.jpg">
-                <div>
-                    <p>Red Printed Tshirt</p>
-                    <small>Price: $90.00</small>
-                    <br>
-                    <a href="">Remove</a>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/Product3.png">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small><h4 class="product-price">$300</h4></small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
                 </div>
-            </div>
 
-        </td>
-        <td><input type="number" value="1"></td>
-        <td>$90</td>
-    </tr>
-</table>
+            </td>
+            <td><input type="number" class="product-quantity" value="1" min="1"></td>
+            <td><button class="btn add-to-cart-btn">Add To Cart</button></td>
+            <td><button class="btn remove-from-cart-btn">Remove</button>
+            </td>
+            
+        </tr>
+
+    </table>
 
     <div class="total-price">
 
         <table>
+            
             <tr>
-                <td>Subtotal</td>
-                <td>$200.00</td>
-            </tr>
-            <tr>
-                <td>Tax</td>
-                <td>$35.00</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>$230.00</td>
+                <td><h4>Total Amount: $<span class="total-amount">0</span></h4></td>
+                <!-- <td><h4 class="black-bold">Total Amount: $</h4></td>
+                <td><h4 class="black-bold"><span id="totalAmount">0</span></h4></td> -->
             </tr>
         </table>
     </div>
-    
-    </div>
+
+</div>
+
 
 <!--------js for toggle menu-------->
 
@@ -174,5 +174,56 @@
 </div>
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/a6ac84bd84.js" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        const removeFromCartButtons = document.querySelectorAll('.remove-from-cart-btn');
+        let totalAmount = 0;
+    
+        // Update total display function
+        function updateTotalDisplay() {
+            let totalDisplay = document.querySelector('.total-amount');
+            if (!totalDisplay) {
+                const display = document.createElement('h4');
+                display.innerHTML = `Total Amount: $<span class="total-amount">0</span>`;
+                document.body.appendChild(display);
+                totalDisplay = document.querySelector('.total-amount');
+            }
+            totalDisplay.innerText = totalAmount.toLocaleString();
+        }
+    
+        // Add to Cart
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const row = button.closest('tr');
+                const priceText = row.querySelector('.product-price').innerText;
+                const quantity = parseInt(row.querySelector('.product-quantity').value);
+                const price = parseFloat(priceText.replace(/[^0-9.-]+/g, ''));
+                const itemTotal = price * quantity;
+    
+                totalAmount += itemTotal;
+                updateTotalDisplay();
+            });
+        });
+    
+        // Remove from Cart
+        removeFromCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const row = button.closest('tr');
+                const priceText = row.querySelector('.product-price').innerText;
+                const quantity = parseInt(row.querySelector('.product-quantity').value);
+                const price = parseFloat(priceText.replace(/[^0-9.-]+/g, ''));
+                const itemTotal = price * quantity;
+    
+                totalAmount -= itemTotal;
+                if (totalAmount < 0) totalAmount = 0;
+                updateTotalDisplay();
+            });
+        });
+    
+        // Initial call to show total as 0
+        updateTotalDisplay();
+    });
+    </script>
 </body>
 </html>
