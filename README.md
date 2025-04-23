@@ -15,13 +15,3 @@ Pro Parts – One-stop destination for premium car accessories, designed to upgr
 🏁 Our Mission
 To provide high-quality and affordable car accessories that elevate your driving experience and reflect your personality. We are committed to offering exceptional customer service and staying up-to-date with the latest automotive trends.
 
-🛠️ Tech Stack
-Frontend: HTML, CSS, JavaScript (or React/Vue – update based on your actual tech)
-
-Backend: Node.js / PHP / Django (update accordingly)
-
-Database: MongoDB / MySQL / Firebase
-
-Payment Integration: Razorpay / Stripe / PayPal
-
-Hosting: Vercel / Netlify / AWS / Custom Hosting
