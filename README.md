@@ -8,9 +8,7 @@ Pro Parts – One-stop destination for premium car accessories, designed to upgr
 
 🔍 Advanced Search & Filters – Quickly find exactly what you need.
 
-💳 Secure Checkout – Multiple payment options with end-to-end encryption.
 
-🚚 Fast Shipping – Reliable and quick delivery across regions.
 
 🏁 Our Mission
 To provide high-quality and affordable car accessories that elevate your driving experience and reflect your personality. We are committed to offering exceptional customer service and staying up-to-date with the latest automotive trends.
