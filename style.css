@@ -505,6 +505,7 @@ form a{
 
 /* ------testimonial------ */
 .testimonial .col-3{
+    margin-top: 20px;
     text-align: center;
     padding: 40px 20px;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
@@ -514,6 +515,8 @@ form a{
     width: 50px;
     margin-top: 20px;
     border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
 }
 .testimonial .col-3:hover {
     transform: translateY(-15px);
