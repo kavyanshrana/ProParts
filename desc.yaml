@@ -1,0 +1,96 @@
+website:
+  name: Pro Parts
+  description: Automobile accessories website offering a wide range of products for cars, bikes, SUVs, and trucks, with a focus on quality, style, and customer satisfaction.
+  features:
+    - Responsive design with modern, clean layout
+    - Navigation bar with dropdown menus for easy browsing
+    - Product categories by vehicle type
+    - Shopping cart functionality
+    - Customer reviews and testimonials
+    - Secure login and signup pages
+    - Free home delivery for orders above ₹499
+    - 7-day return policy
+    - Support available Monday-Saturday, 9 AM to 9 PM
+    - Footer with quick links and app download options
+  ui:
+    navbar:
+      display: flex
+      align-items: center
+      padding: 20px
+      menu-icon:
+        visible: true
+        action: Toggles menu items max-height between "0px" and "200px"
+    layout:
+      container:
+        max-width: 1300px
+        margin: auto
+        padding: 25px
+      row:
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-around
+      col-2:
+        flex-basis: 50%
+        min-width: 300px
+      col-3:
+        flex-basis: 30%
+        min-width: 250px
+      col-4:
+        flex-basis: 25%
+        min-width: 200px
+      col-5:
+        width: 160px
+    buttons:
+      primary:
+        background: red
+        color: white
+        border-radius: 30px
+        hover: background green
+  style:
+    font-family: "Noto Sans", sans-serif
+    color-primary: "#ff523b"
+    color-secondary: "#555"
+    background-gradient: radial-gradient(#fff, #8d959b)
+    footer-background: "#000"
+    footer-color: "#8a8a8a"
+  testimonials:
+    - language: Punjabi
+      content: "ਮੈਂ ਹਮੇਸ਼ਾ ਹੀ ਆਪਣੀ ਕਾਰ ਨੂੰ ਵਿਲੱਖਣ ਅਤੇ ਆਧੁਨਿਕ ਬਣਾਈ ਰੱਖਣ ਦਾ ਸ਼ੌਕੀਨ ਰਿਹਾ ਹਾਂ। ਜਦੋਂ ਮੈਨੂੰ ਇਹ ਵੈਬਸਾਈਟ ਮਿਲੀ, ਤਾਂ ਅਸਲ ਵਿੱਚ ਦਿਲ ਖੁਸ਼ ਹੋ ਗਿਆ।"
+    - language: Hindi
+      content: "देख भाई, गाड़ी हमारे लिए शौक नहीं, स्टाइल का हिस्सा है। और जब बात स्टाइल की आती है, तो फिर एक्सेसरीज़ भी टॉप क्लास होनी चाहिए। इस वेबसाइट ने जो माल भेजा – वो एकदम झकास था।"
+    - language: Urdu
+      content: "ہمیشہ اپنے راستے کی حکمت سے ہم نے دنیا کی چیزوں کو دیکھا اور ان کی حقیقت کو سمجھا۔ جب گاڑیوں کی ایکسیسریز کی بات آتی ہے تو ہمیں صرف وہی چاہیے جو مضبوط ہو، پائیدار ہو، اور ہر لحاظ سے بہترین ہو۔"
+  policies:
+    free_delivery: "Free home delivery for products above ₹499."
+    return: "Return product within 7 days for any product you buy."
+    support: "We're always here Monday-Saturday 9 AM to 9 PM."
+    quality: "We ensure quality products with best industry prices."
+  products:
+    price_samples:
+      - ₹699
+      - ₹5500
+      - ₹1499
+      - ₹60924
+      - ₹19999
+      - ₹2099
+      - ₹5999
+      - ₹2500
+      - ₹450
+      - ₹999
+      - ₹499
+      - ₹2199
+      - ₹1349
+      - ₹15999
+      - ₹43499
+      - ₹12999
+      - ₹4999
+      - ₹2999
+      - ₹6999
+      - ₹9999
+  scripts:
+    menu_toggle:
+      description: "Toggles the visibility of navigation menu items on clicking the menu icon."
+      logic:
+        - If MenuItems maxHeight is "0px", set to "200px"
+        - Else, set to "0px"

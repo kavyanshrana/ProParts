@@ -177,10 +177,6 @@ small {
 .col-5 img {
     width: 100%;
     cursor: pointer;
-    filter: grayscale(100%);
-}
-.col-5 img:hover {
-    filter: grayscale(0);
 }
 
 
@@ -324,7 +320,7 @@ ul {
         position: absolute;
         top: 70px; 
         left: 0;
-        background: #133;
+        background: #1e1d1d;
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
