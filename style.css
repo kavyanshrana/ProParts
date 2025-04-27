@@ -424,7 +424,7 @@ ul {
 
 .account-page{
     padding: 40px 0px;
-    background: radial-gradient(#fff,#ffd6d6);
+    
 }
 .form-container{
     background: #fff;
@@ -505,6 +505,7 @@ form a{
 
 /* ------testimonial------ */
 .testimonial .col-3{
+    margin-top: 20px;
     text-align: center;
     padding: 40px 20px;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
@@ -514,6 +515,8 @@ form a{
     width: 50px;
     margin-top: 20px;
     border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
 }
 .testimonial .col-3:hover {
     transform: translateY(-15px);
@@ -531,4 +534,48 @@ form a{
     font-weight: 600;
     color: #555;
     font-size: 16px;
+}
+
+/* ------Single product details-----  */
+.single-product {
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0px;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    border: 1px solid #ff523b; 
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
 }
