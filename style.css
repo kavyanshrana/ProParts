@@ -340,7 +340,9 @@ ul {
         cursor: pointer;
     }
 }
-
+.footer-col-3 li a {
+    color: #8a8a8a;
+}
 .footer-col-3 li:hover {
     cursor: pointer;
 }
