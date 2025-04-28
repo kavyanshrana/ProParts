@@ -341,7 +341,9 @@ ul {
     }
 }
 
- 
+.footer-col-3 li:hover {
+    cursor: pointer;
+}
 .footer .container {
     max-width: 100%;
     padding-left: 0;
